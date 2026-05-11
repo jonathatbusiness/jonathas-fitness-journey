@@ -255,15 +255,20 @@ button {
 }
 
 @media (max-width: 760px) {
-  .app-shell {
-    padding: 14px;
+  .hero h1 {
+    font-size: clamp(2.2rem, 10vw, 3.6rem);
+    line-height: 0.95;
   }
 
-  .hero {
-    padding: 24px;
-    border-radius: 24px;
+  .hero p {
+    font-size: 1rem;
+    line-height: 1.55;
   }
 
+  .exercise-image {
+    min-height: 160px;
+    padding: 10px;
+  }
   .tabs {
     width: 100%;
     border-radius: 20px 20px 0 0;
@@ -274,17 +279,30 @@ button {
     padding: 13px 16px;
   }
 
+  .app-shell {
+    padding: 8px 0;
+  }
+
+  .hero {
+    padding: 18px;
+    border-radius: 22px;
+  }
+
   .workout-panel {
-    border-radius: 0 0 24px 24px;
+    border-radius: 0 0 22px 22px;
+    padding: 12px;
+  }
+
+  .accordion-header {
     padding: 16px;
+  }
+
+  .accordion-content {
+    padding: 0 12px 16px;
   }
 
   .exercise-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .accordion-header {
-    padding: 18px;
   }
 }
 
